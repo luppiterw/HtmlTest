@@ -305,7 +305,8 @@ RE.testFun = function(){
 
 function keyUp()
 {
-
+    //doucment.body.style.minHeight;
+    //RE.editor.he;
 }
     function keyUp(){
     var obj=G("c2");
