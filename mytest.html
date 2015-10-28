@@ -67,7 +67,9 @@
                 <textarea name="co" cols="60"
                           rows="10" wrap="off"
                           id="text_edit"  onblur=""
-                          onkeyup="editKeyUp()" onFocus=""
+                          onkeypress="editKeyPress()"
+                          onkeyup="editKeyUp()"
+                          onFocus="clearValue('2')"
                           onscroll="G('li').scrollTop = this.scrollTop;"
                           oncontextmenu="return false"  class="grey">
                     请在这里粘入多段字看一看。
@@ -79,6 +81,21 @@
 
 <script language="javascript" type="text/javascript">
     var num="";
+    function editKeyPress()
+    {
+        editKeyUp();
+    }
+
+    function clearValue(i)
+    {
+        G(c[i-1]).style.color="#000";
+        keyUp();
+        if(isfirst[i]==0)
+        {
+            G(c[i-1]).value="";
+        }
+        isfirst[i]=1;
+    }
     function editKeyUp()
     {
         var obj=G("text_edit");
@@ -96,7 +113,8 @@
             if (document.all)
             {
                 num += i + "\r\n";
-            } else
+            }
+            else
             {
                 num += i + "\n";
             }
