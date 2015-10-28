@@ -73,6 +73,7 @@ RE.setWidth = function(size) {
 
 RE.setHeight = function(size) {
     document.body.style.minHeight = size;
+    G("text_linenumber").style.height = size + "px";
 }
 
 RE.setTextAlign = function(align) {

@@ -34,8 +34,9 @@
         {
             font-family:Arial, Helvetica, sans-serif;
             height:160px;
-            margin:0px;
+            /*margin:0px;*/
             width:416px;
+            margin-left: 32px;
             padding:0 0 0 35px;
             overflow-x: hidden;
             line-height:20px;
@@ -120,6 +121,13 @@
             }
         }
         lineobj.value=num;
+//        var oldHeight = lineobj.clientHeight;
+//        alert(oldHeight);
+//        var newHeight = oldHeight + 20;
+//        alert(newHeight);
+//        lineobj.style.height = newHeight + 'px';
+//        lineobj.height;
+//        lineobj.setHeight();
         num="";
     }
 
@@ -128,8 +136,11 @@
         var nV = 0;
         if(!document.all)
         {
-            nV=G("text_edit").scrollTop;
-            G("text_linenumber").scrollTop=nV;
+            var lineObj = G("text_linenumber");
+            var editObj = G("text_edit");
+            nV=editObj.scrollTop;
+            lineObj.scrollTop=nV;
+
             setTimeout("autoScroll()",20);
         }
     }
