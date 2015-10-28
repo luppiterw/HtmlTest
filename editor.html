@@ -5,6 +5,23 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style type="text/css">
+        #text_linenumber
+        {
+            background:#ecf0f5;
+            /*background:transparent;*/
+            height:160px;
+            border:0px;  /*无边框*/
+            overflow:hidden;
+            width:32px;
+            border-right-width: 0;
+            line-height:20px;
+            margin:0px;
+            padding:0px;
+            text-align:right;
+        }
+    </style>
 </head>
 <body>
 <!--<a onclick="window.TestJS.printTest()">-->
@@ -12,8 +29,78 @@
         <!--Click me!!!-->
     <!--</div>-->
 <!--</a>-->
-<div id="ol"><textarea id="li" disabled></textarea></div>
-<div id="editor" contentEditable="true" style="white-space:nowrap" onkeypress=""></div>
-<script type="text/javascript" src="rich_editor.js"></script>
+<div id="ol">
+    <textarea id="text_linenumber" disabled>
+
+    </textarea>
+</div>
+<div id="editor"
+     contentEditable="true"
+     style="white-space:nowrap"
+     onkeypress="editKeyPress()"
+     onscroll="G('text_linenumber').scrollTop = this.scrollTop;">
+
+</div>
+
+<script type="text/javascript" src="rich_editor.js">
+    var num="";
+    function editKeyPress()
+    {
+        editKeyUp();
+    }
+
+    function clearValue(i)
+    {
+        G(c[i-1]).style.color="#000";
+        keyUp();
+        if(isfirst[i]==0)
+        {
+            G(c[i-1]).value="";
+        }
+        isfirst[i]=1;
+    }
+    function editKeyUp()
+    {
+        var obj=G("text_edit");
+        var str=obj.value;
+        str=str.replace(/\r/gi,"");
+        str=str.split("\n");
+        n=str.length;
+        line(n);
+    }
+    function line(n)
+    {
+        var lineobj = G("text_linenumber");
+        for (var i = 1; i <= n; i++)
+        {
+            if (document.all)
+            {
+                num += i + "\r\n";
+            }
+            else
+            {
+                num += i + "\n";
+            }
+        }
+        lineobj.value=num;
+        num="";
+    }
+
+    function autoScroll()
+    {
+        var nV = 0;
+        if(!document.all)
+        {
+            nV=G("text_edit").scrollTop;
+            G("text_linenumber").scrollTop=nV;
+            setTimeout("autoScroll()",20);
+        }
+    }
+    if(!document.all)
+    {
+        window.addEventListener("load",autoScroll,false);
+    }
+</script>
+
 </body>
 </html>
