@@ -303,7 +303,18 @@ RE.testFun = function(){
 //    RE.setUnderline();
 
 }
+RE.touchStart = function () {
+    window.location.href = "re-touchstart://";
+}
+RE.touchMove = function () {
+    //window.location.href = "re-touchmove://" + encodeURI(RE.getHtml());
 
+    window.location.href = "re-touchmove://";
+
+}
+RE.touchEnd = function () {
+    window.location.href = "re-touchend://";
+}
 function keyUp()
 {
     //doucment.body.style.minHeight;
@@ -325,4 +336,9 @@ RE.editor.addEventListener("keyup", function(e) {
         RE.enabledEditingItems(e);
     }
 });
+
+//RE.editor.addEventListener("focus")
 RE.editor.addEventListener("click", RE.enabledEditingItems);
+RE.editor.addEventListener("touchstart", RE.touchStart);
+RE.editor.addEventListener("touchmove", RE.touchMove);
+RE.editor.addEventListener("touchend", RE.touchEnd);
