@@ -315,6 +315,12 @@ RE.touchMove = function () {
 RE.touchEnd = function () {
     window.location.href = "re-touchend://";
 }
+RE.onScroll = function() {
+    window.location.href = "re-scroll://";
+}
+window.onscroll = function(){
+    window.location.href = "re-scroll://";
+}
 function keyUp()
 {
     //doucment.body.style.minHeight;
@@ -337,8 +343,11 @@ RE.editor.addEventListener("keyup", function(e) {
     }
 });
 
+
+
 //RE.editor.addEventListener("focus")
 RE.editor.addEventListener("click", RE.enabledEditingItems);
 RE.editor.addEventListener("touchstart", RE.touchStart);
 RE.editor.addEventListener("touchmove", RE.touchMove);
 RE.editor.addEventListener("touchend", RE.touchEnd);
+RE.editor.addEventListener("scroll",RE.onScroll);

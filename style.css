@@ -43,6 +43,7 @@ body {
     -webkit-user-select: auto !important;
     -webkit-user-modify: read-write !important;
 
+
     outline: 0px solid transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -59,6 +60,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /*line-height: 20px;*/
 }
 
 #editor[placeholder]:empty:not(:focus):before {
