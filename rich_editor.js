@@ -324,8 +324,13 @@ window.onscroll = function(){
 
 function keyUp()
 {
+    var ed = document.getElementById('editor');
+    //RE.editor.getUserData().selectionStart;
+    //navigator.userAgent.indexOf("MSIE")
+    //ed.selection().start
     //doucment.body.style.minHeight;
     //RE.editor.he;
+    //RE.editor.getAttribute().se
 }
     function keyUp(){
     var obj=G("c2");
