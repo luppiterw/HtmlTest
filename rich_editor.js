@@ -261,8 +261,23 @@ RE.enabledEditingItems = function(e) {
     if (formatBlock.length > 0) {
         items.push(formatBlock);
     }
-    window.getSelection().focusOffset
+    //window.getSelection().focusOffset
+    //window.getSelection().createRange();
+    //document.selection.createRange();
+    //document.selection
+    var rng = document.createRange();
 
+    var sel = window.getSelection();
+    sel.addRange()
+    var cursor = 0; // 光标位置
+    var range = document.selection.createRange();
+    var srcele = range.parentElement();//获取到当前元素
+    var copy = document.body.createTextRange();
+    copy.moveToElementText(srcele);
+    for (cursor = 0; copy.compareEndPoints("StartToStart", range) < 0; cursor++)
+    {
+        copy.moveStart("character", 1);//改变光标位置，实际上我们是在记录cursor的数量.
+    }
     window.location.href = "re-state://" + encodeURI(items.join(','));
 }
 
