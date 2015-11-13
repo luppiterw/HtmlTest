@@ -261,6 +261,7 @@ RE.enabledEditingItems = function(e) {
     if (formatBlock.length > 0) {
         items.push(formatBlock);
     }
+    window.getSelection().focusOffset
 
     window.location.href = "re-state://" + encodeURI(items.join(','));
 }
@@ -331,6 +332,7 @@ function keyUp()
     //doucment.body.style.minHeight;
     //RE.editor.he;
     //RE.editor.getAttribute().se
+    window.event.clientY
 }
     function keyUp(){
     var obj=G("c2");
@@ -357,3 +359,4 @@ RE.editor.addEventListener("touchstart", RE.touchStart);
 RE.editor.addEventListener("touchmove", RE.touchMove);
 RE.editor.addEventListener("touchend", RE.touchEnd);
 RE.editor.addEventListener("scroll",RE.onScroll);
+
