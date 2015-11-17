@@ -349,6 +349,9 @@ document.onselectionchange = function () {
         copy.moveStart("character", 1);//改变光标位置，实际上我们是在记录cursor的数量.
     }
     alert(cursor);
+
+    window.scrollY
+    RE.editor.scrollY
 }
 
 function keyUp()
