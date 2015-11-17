@@ -331,6 +331,7 @@ RE.touchMove = function () {
 RE.touchEnd = function () {
     window.location.href = "re-touchend://";
 }
+//此方法是无效的，此处只有window.onscroll是有效的
 RE.onScroll = function() {
     window.location.href = "re-scroll://";
 }
@@ -338,9 +339,23 @@ window.onscroll = function(){
     window.location.href = "re-scroll://";
 }
 
+var cursor = 0; // 光标位置
+document.onselectionchange = function () {
+    var range = document.selection.createRange();
+    var srcele = range.parentElement();//获取到当前元素
+    var copy = document.body.createTextRange();
+    copy.moveToElementText(srcele);
+    for (cursor = 0; copy.compareEndPoints("StartToStart", range) < 0; cursor++) {
+        copy.moveStart("character", 1);//改变光标位置，实际上我们是在记录cursor的数量.
+    }
+    alert(cursor);
+}
+
 function keyUp()
 {
     var ed = document.getElementById('editor');
+    window.getSelection().anchorOffset;
+    window.getSelection().anchorNode.
     //RE.editor.getUserData().selectionStart;
     //navigator.userAgent.indexOf("MSIE")
     //ed.selection().start
@@ -374,4 +389,5 @@ RE.editor.addEventListener("touchstart", RE.touchStart);
 RE.editor.addEventListener("touchmove", RE.touchMove);
 RE.editor.addEventListener("touchend", RE.touchEnd);
 RE.editor.addEventListener("scroll",RE.onScroll);
-
+//document.addEventListener("click",document.onselectionchange)
+RE.editor.addEventListener("change",RE.callback);
