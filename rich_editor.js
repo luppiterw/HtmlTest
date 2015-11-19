@@ -384,8 +384,8 @@ RE.editor.addEventListener("keyup", function(e) {
     }
 });
 
-
-
+window.onload
+RE.editor.scrollTop
 //RE.editor.addEventListener("focus")
 RE.editor.addEventListener("click", RE.enabledEditingItems);
 RE.editor.addEventListener("touchstart", RE.touchStart);
