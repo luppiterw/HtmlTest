@@ -1,0 +1,739 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/iframe.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="南航明珠俱乐部,明珠俱乐部,常旅客,里程奖励,里程累积,里程兑换,兑换奖励机票。" />
+    <meta name="keywords" content="南航明珠俱乐部是中国南方航空股份有限公司的常旅客里程奖励计划。南航五星钻石销售服务热线95539及遍及全国各大机场的明珠俱乐部现场服务中心，为明珠俱乐部会员提供完善、便捷的服务。" />
+    <meta http-eqUIv="X-UA-Compatible" content="IE=7" />
+    <title>中国南方航空，您的空中之家</title>
+
+
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link href="/skypearl/cn/styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/skypearl/cn/styles/textAndPublic.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="/skypearl/cn/styles/pagination.css" />
+
+    <script src="/skypearl/cn/scripts/jquery-1.4.2.min.js" language="javascript" type="text/javascript"></script>
+
+    <link href="/skypearl/cn/styles/ui-lightness/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
+    <script src="/skypearl/cn/scripts/jquery-ui-1.7.2.custom.js"></script>
+
+    <link href="/skypearl/cn/styles/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <script src="/skypearl/cn/scripts/jquery-ui.min.js" language="javascript" type="text/javascript"></script>
+
+    <script src="/skypearl/cn/scripts/DD_belatedPNG_0.0.7a-min.js"></script>
+    <script src="http://www.csair.com/topAndFoot/topMenu.js" type="text/javascript"  charset="utf-8"></script>
+
+    <script src="/skypearl/cn/scripts/fearvalid_messages_zh.js" type="text/javascript"></script>
+    <script src="/skypearl/cn/scripts/login.js"></script>
+    <script src="/skypearl/cn/scripts/public.js"></script>
+    <script type="text/javascript" src="/skypearl/cn/scripts/jquery.pagination.js" charset="utf-8"></script>
+
+    <script type="text/javascript" language="javascript">
+        var ROOT = "/skypearl/cn"; //set javascript root path to /skypearl/cn
+        var mn = "";
+    </script>
+    <link href="/skypearl/cn/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="/skypearl/cn/styles/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <script src="/skypearl/cn/scripts/jquery-1.4.2.min.js" language="javascript" type="text/javascript"></script>
+    <script src="/skypearl/cn/scripts/jquery-ui.min.js" language="javascript" type="text/javascript"></script>
+    <!--
+    <script src="/skypearl/cn/scripts/common.js" language="javascript" type="text/javascript"></script>-->
+
+    <link href="/skypearl/cn/styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/skypearl/cn/styles/textAndPublic.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="/skypearl/cn/styles/pagination.css" />
+
+    <script src="/skypearl/cn/scripts/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="/skypearl/cn/styles/ui-lightness/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
+    <script src="/skypearl/cn/scripts/jquery-ui-1.7.2.custom.js"></script>
+
+    <script src="http://www.csair.com/topAndFoot/topMenu.js" type="text/javascript"  charset="utf-8"></script>
+
+    <script src="/skypearl/cn/scripts/fearvalid_messages_zh.js" type="text/javascript"></script>
+    <script src="/skypearl/cn/scripts/login.js" type="text/javascript"></script>
+    <script src="/skypearl/cn/scripts/public.js"></script>
+    <script type="text/javascript" src="/skypearl/cn/scripts/jquery.pagination.js" charset="utf-8"></script>
+    <script src="/skypearl/cn/scripts/topmenu.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+        var ROOT = "/skypearl/cn"; //set javascript root path to /skypearl/cn
+        var mn = "";
+    </script>
+
+    <link href="/skypearl/cn/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="/skypearl/cn/styles/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <script src="/skypearl/cn/scripts/skymenu.js" language="javascript" type="text/javascript"></script>
+    <script src="/skypearl/cn/scripts/DD_belatedPNG_0.0.7a-min.js"></script>
+    <!-- InstanceBeginEditable name="head" -->
+
+    <script src="/skypearl/cn/scripts/fearvaltools.js"></script>
+    <script type="text/javascript" src="/skypearl/cn/scripts/fearvalid.js?version=1.1"></script>
+
+    <script type="text/javascript" src="/skypearl/cn/scripts/ui.datepicker-zh-CN.js"></script>
+    <script type="text/javascript" src="/skypearl/cn/scripts/dateutils.js"></script>
+
+    <script type="text/javascript" src="/skypearl/cn/scripts/modifiy_message_cn.js"></script>
+    <script>
+
+        var sendtime = 0;
+
+
+        $(function(){
+            var certTypeB = "";
+            $("#certType").val(certTypeB);
+
+            //切换卡类型
+            $("input[name=bankType]").click(function() {
+                if ($(this).val() == "C") {
+                    $(".bankCardTr").hide();
+                    $(".cCardTr").show();
+                } else {
+                    $(".cCardTr").hide();
+                    $(".bankCardTr").show();
+                }
+            });
+
+            if ($("input[name='bankType']:checked").val() == "C") {
+                $(".bankCardTr").hide();
+                $(".cCardTr").show();
+            } else {
+                $(".cCardTr").hide();
+                $(".bankCardTr").show();
+            }
+
+            // 生成信用卡有效期的年份
+            var cYear = new Date().getFullYear();
+            for (var i = cYear; i <= cYear + 20; i++) {
+                $("#effYear").append("<option value='" + i + "'>" + i + "年</option>");
+            }
+
+            //保存方法
+            $("#savebutton").click(function(){
+                $("#notice").html("");
+                $("#notice").css("display","none");
+
+                if (!validateData()) {
+                    return;
+                }
+
+                var bankcardType = $("input[name='bankType']:checked").val();
+                if(!bankcardType){
+                    //alert("请选择银行类别");
+                    exceptionNotice("请选择银行类别");
+                    return false;
+                }
+
+                if (bankcardType == "D") {
+                    if ($("#bankcardType").val().trim() == "") {
+                        //alert("请选择银行");
+                        exceptionNotice("请选择银行");
+                        return false;
+                    }
+                    if ($("#bankcardNo").val().trim() == "") {
+                        //alert("请输入银行卡号");
+                        exceptionNotice("请输入银行卡号");
+                        return false;
+                    }
+                    //alert(validatorCardNo($("#bankcardNo").val()));
+                    if (!validatorCardNo($("#bankcardNo").val())) {
+                        //alert("银行卡号不正确");
+                        exceptionNotice("银行卡号不正确");
+                        return false;
+                    }
+                } else {
+                    if ($("#cCardNo").val().trim() == "") {
+                        exceptionNotice("请输入信用卡号");
+                        return false;
+                    }
+                    if (!validatorCardNo($("#cCardNo").val())) {
+                        exceptionNotice("信用卡号不正确");
+                        return false;
+                    }
+
+                    if (!$("#effMonth").val()) {
+                        exceptionNotice("请选择卡有效期");
+                        return false;
+                    }
+
+                    if (!$("#effYear").val()) {
+                        exceptionNotice("请选择卡有效期");
+                        return false;
+                    }
+
+                    if (!$("#saveCode").val()) {
+                        exceptionNotice("请输入卡验证码");
+                        return false;
+                    }
+
+                    var pattern=/^[0-9]{3}$/;
+                    if(!pattern.test($("#saveCode").val())){
+                        exceptionNotice("卡验证码不正确");
+                        return false;
+                    }
+                }
+                checkValidateCode();
+            });
+        });
+
+        function validateData(isCheckAll) {
+
+            if (!isMemberNo($("#memberNo").val())) {
+
+                exceptionNotice("会员卡号不正确");
+                return false;
+            }
+            if ($("#fullName").val().trim() == "") {
+
+                exceptionNotice("中文全名不能为空");
+                return false;
+            }
+            if ($("#certType").val().trim() == "") {
+
+                exceptionNotice("请选择证件类型");
+                return false;
+            }
+
+
+            if ($("#certNum").val().trim() == "") {
+
+                exceptionNotice("请输入证件号");
+                return false;
+            }
+
+            if (!checkCert($("#certNum").val())) {
+
+                exceptionNotice("证件号不正确");
+                return false;
+            }
+            if ($("#bandPhonehidden").val().trim() == "") {
+
+                exceptionNotice("请输入手机");
+                return false;
+            }
+
+            if (isCheckAll) {
+                if ($("#validateCode").val().trim() == "") {
+                    exceptionNotice("请输入验证码");
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        //银行卡号校验
+        function validatorCardNo(val) {
+            $("#span_bankCardNo").html("");
+
+            if (!checkNum(val)) {
+                $("#span_bankCardNo").html("银行卡号不正确");
+                return false;
+            }
+            return true;
+
+        }
+        //信用卡号校验
+        function validatorCCardNo(val) {
+            $("#span_cCardNo").html("");
+
+            if (!checkNum(val)) {
+                $("#span_cCardNo").html("信用卡号不正确");
+                return false;
+            }
+            return true;
+
+        }
+
+        function exceptionNotice(noticeVal){
+
+            $("#notice").html(noticeVal);
+            $("#notice").css("display","block");
+        }
+
+        //控制接收验证码后，1分钟内该按钮变灰色，1分钟后恢复
+        var wait=60;
+        function time() {
+
+            if (wait == 0) {
+                wait = 60;
+                $("#valicodeRemind").html("");
+                document.getElementById('sendValidateCode').onclick = function(){sendCode();};
+                $("#sendValidateCode").val("获取验证码");
+            } else {
+                document.getElementById('sendValidateCode').onclick = function(){};
+                //$("#valicodeRemind").html(wait+"秒后可重新获取");
+                //$("#valicodeRemind").css("display","");
+                $("#sendValidateCode").val(wait+"秒再发送");
+                wait--;
+                setTimeout(function() {
+                            time()
+                        },
+                        1000);
+
+            }
+        }
+
+        function sendCode(){
+            $("#notice").html("");
+            $("#notice").css("display","none");
+
+            if (!validateData()) {
+                return;
+            }
+
+            if(!checkMobile($("#bandPhonehidden").val())){
+                exceptionNotice("手机号格式不正确");
+                return ;
+            }
+
+            var bankcardType = $("input[name='bankType']:checked").val();
+            var bankcardNo = "";
+            if (bankcardType == "C") {
+                bankcardNo = $("#cCardNo").val();
+                if (bankcardNo.trim() == "") {
+                    exceptionNotice("请输入信用卡号");
+                    return false;
+                }
+                if (!validatorCardNo(bankcardNo)) {
+                    exceptionNotice("信用卡号不正确");
+                    return false;
+                }
+            }
+
+            var systime=new Date().getTime();
+            if(systime - sendtime < 60000) {
+                exceptionNotice("一分钟内只允许发送一次验证码，如核实未收到验证码，请稍后再次点击‘获取验证码’按钮");
+                return;
+            }
+
+            if (wait == 0) {
+                wait = 60;
+                $("#valicodeRemind").html("");
+                $("#sendValidateCode").val("获取验证码");
+                document.getElementById('sendValidateCode').onclick = function(){sendCode();};
+            } else {
+                document.getElementById('sendValidateCode').onclick = function(){};
+                //$("#valicodeRemind").html(wait+"秒后可重新获取");
+                $("#sendValidateCode").val(wait+"秒可再发送");
+                //$("#valicodeRemind").css("display","");
+                wait--;
+                setTimeout(function() {
+                            time()
+                        },
+                        1000)
+            }
+
+            var queryString= "bandPhonehidden="+$("#bandPhonehidden").val()
+                    + "&memberNo="+$("#memberNo").val() + "&cnFullName="
+                    + encodeURI($("#fullName").val(), "UTF-8") + "&certType=" +  $("#certType").val() + "&certNum="+ $("#certNum").val()+"&isChangeContact=Y"
+                    +"&bankcardType=" + bankcardType + "&bankcardNo=" + bankcardNo;
+
+            $.ajax({
+                type: "get",
+                url: 'https://skypearl.csair.com/skypearl/cn/sendAuthentiCodeAction.action?systime='+systime,
+                data: queryString,
+                dataType: "jsonp",
+                jsonp: "callback",
+                success: function(myjson){
+                    if(myjson.code == -4){
+                        //var	uri = 'L3NreXBlYXJsL2NuL3RvbWVtYmVyQXJlYS5hY3Rpb24/dXJscmVkaXJlY3Q9Y29ubmVjdGluZm81';
+                        top.location.href = "loginPage.action";//?uri="+uri;
+                    } else if(myjson.code == -1 || myjson.code == -2){
+                        exceptionNotice(myjson.message);
+                        //window.location.href="/skypearl/cn/svcAuthenticateFail.action";
+                    }else if(myjson.code == -3){
+                        exceptionNotice(myjson.message);
+                        //window.location.href="/skypearl/cn/authenticateCheckInfoFail.action";
+                    }else {
+                        alert(myjson.message);
+                    }
+                    if (myjson.code == 0) {
+                        sendtime = new Date().getTime();
+                    } else {
+                        sendtime = 0;
+                        wait = 0;
+                    }
+                }
+            });
+        }
+
+        var isSumiting = false;
+        function checkValidateCode(){
+            var vaildCode = $("#validateCode").val();
+
+            if(vaildCode == "") {
+                exceptionNotice("验证码不允许为空，请输入。");
+                //alert("验证码不允许为空，请输入。");
+                return;
+            }
+
+            var bankcardType = $("input[name='bankType']:checked").val()
+            var bankcardNo = "";
+            if (bankcardType == "C") {
+                bankcardNo = $("#cCardNo").val();
+            } else {
+                bankcardNo = $("#bankcardNo").val();
+            }
+            var effDate = $("#effYear").val().substring(2, 4) + $("#effMonth").val();
+            var queryString= "authentiCode=" + vaildCode + "&memberNo=" + $("#memberNo").val() + "&cnFullName="
+                    + encodeURI($("#fullName").val(), "UTF-8") + "&certType=" +  $("#certType").val() + "&certNum="+ $("#certNum").val()
+                    + "&bandPhonehidden="+$("#bandPhonehidden").val() + "&bankCode=" +  $("#bankcardType").val()  + "&bankcardType=" +  bankcardType
+                    + "&bankcardNo="+bankcardNo+"&isChangeContact=Y&effDate="+effDate+"&saveCode="+$("#saveCode").val();
+            var systime=new Date().getTime();
+            if (isSumiting) {
+                return;
+            }
+            isSumiting = true;
+            $("#loadimg").show();
+            $.ajax({
+                type: "get",
+                url: 'https://skypearl.csair.com/skypearl/cn/onlineAuthenticate.action?systime='+systime,
+                data: queryString,
+                dataType: "jsonp",
+                jsonp: "callback",
+                success: function(optStatus){
+                    $("#loadimg").hide();
+                    isSumiting = false;
+                    if(optStatus.code == -1){
+                        if (optStatus.message == "处理失败") {
+                            exceptionNotice(optStatus.message + "，请查看所填信息是否有误");
+                        } else {
+                            exceptionNotice(optStatus.message);
+                        }
+                    }
+                    if(optStatus.code == -2){
+                        exceptionNotice(optStatus.message);
+                        //window.location.href="/skypearl/cn/svcAuthenticateFail.action";
+                    }
+                    if(optStatus.code == -3){
+                        exceptionNotice(optStatus.message);
+                        //window.location.href="/skypearl/cn/authenticateCheckInfoFail.action";
+                    }
+                    if(optStatus.code==0){
+                        window.location.href="/skypearl/cn/authenticateSuccess.action";
+                    }
+                },
+                error: function() {
+                    isSumiting = false;
+                    $("#loadimg").hide();
+                }
+            });
+        }
+
+        //判断是否会员卡号
+        function isMemberNo(num){
+            if( /^[0-9]{12}$/.test(num)){
+                var firstNo;
+                var sum17 = 0;
+                for(var i=0; i< num.length; i++){
+                    if(i==0){
+                        firstNo = num.charAt(i);
+                    }else{
+                        sum17 = sum17 + (new Number(num.charAt(i)));
+                    }
+                }
+                return (sum17%7==firstNo);
+            }else{
+                return false;
+            }
+        }
+
+        //数字
+        function checkNum(num){
+            if($.trim(num)==""){
+                return true;
+            }
+            var jgpattern=/^[0-9]{16,24}$/;
+            if(jgpattern.test(num)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        //检查手机
+        function checkMobile(mobile){
+            if($.trim(mobile)==""){
+                return false;
+            }
+
+            if(mobile.length != 11){
+                return false;
+            }
+            var jgpattern=/^1[34578][0-9]+$/;
+            if(jgpattern.test(mobile)){
+                return true;
+            }else{
+
+                return false;
+            }
+        }
+
+        //字符
+        function checkString(num){
+            if($.trim(num)==""){
+                return true;
+            }
+            var jgpattern=/^\w+$/;
+            if(jgpattern.test(num)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+
+        function changeBandPuid(){
+            $("#span_submit").html("");
+            if ($("#bandPhonehidden").val().trim() == "") {
+                $("#span_submit").html("   手机格式不正确");
+
+                return;
+            }
+            if (!checkMobile($("#bandPhonehidden").val())) {
+                $("#span_submit").html("   手机格式不正确");
+                return;
+            }
+
+
+        }
+
+        function changeMember(){
+            $("#span_num").html("");
+
+            if ($("#memberNo").val().trim() == "") {
+                $("#span_num").html("   *会员卡号不正确");
+                return;
+            }
+            if (!isMemberNo($("#memberNo").val())) {
+                $("#span_num").html("   *会员卡号不正确");
+                return;
+            }
+
+        }
+
+        function checkCert(objVal){
+
+            var typeval = $("#certType").val();
+            $("#span_CertNum").hide();
+            //身份证验证
+            if(typeval=='NI'){
+
+                if(isIdCardNo(objVal)==false){
+                    $("#span_CertNum").html("请输入正确格式的身份证号码!");
+
+                    $("#span_CertNum").show();
+                    return false;
+                }
+                $("#certNum").val(objVal);
+                return true;
+            }
+            //护照验证
+            else if(typeval=='PP'){
+                if(!validCardNomber(objVal)){
+                    $("#span_CertNum").html($valid.valid36);
+                    $("#span_CertNum").show();
+
+                    return false;
+                }
+                if(!validPassPort(objVal)){
+                    $("#span_CertNum").html($valid.valid5);
+                    $("#span_CertNum").show();
+
+                    return false;
+                }
+                $("#certNum").val(objVal);
+                return true;
+            }
+            //验证其他
+            else if(typeval=='ID'){
+                var restr = '';
+                var restrOther = '';
+                for(var i = 0; i < objVal.length; i++){
+                    var temp =  objVal.substring(i,i+1);
+                    if (validNumber(temp) || isEng(temp)){
+                        restr = restr + temp;
+                    }else{
+                        restrOther = restrOther+temp;
+                    }
+                }
+
+                if (restrOther != ''){
+                    $("#span_CertNum").html($valid.valid7);
+                    $("#span_CertNum").show();
+                    //alert($valid.valid7);
+                    byID(numid).value = restr;
+
+                    return false;
+                }
+
+                //验证长度
+                if(!validCardNomber(objVal)){
+                    $("#span_CertNum").html($valid.valid3);
+                    $("#span_CertNum").show();
+                    //alert($valid.valid3);
+                    return false;
+                }
+                $("#certNum").val(objVal);
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+<style>
+    .utitlx {
+        height: 400px;
+    }
+    .authenticateTable input {
+        height: 20px;
+    }
+    .cCardTr {
+        display:none;
+    }
+</style>
+<div id="commonbox">
+    <div class="group_xclass">
+        <div class="cbuibg">
+            <div class="groupdiv">
+                <div class="membernav">
+                    <a href="#">明珠首页</a> <a href="#">关于我们</a> <a href="#">获取里程</a> <a href="#">里程兑换</a> <a href="#">会员专享</a> <a href="#">明珠快讯</a></div>
+                <div class="member_shboc">
+                    <div class="nauerln">
+                        <h1><a href="/skypearl/cn/displayAuthenticateStatus.action?&NOSSL"  target="_top">身份认证</a></h1>
+                    </div>
+                    <div  class="bordr2box nxmembser">
+                        <div class="member_shboc ">
+                            <div>
+
+                                <form id="baseinfoForm" method="post">
+                                    <div class="utitlx">
+                                        <h2>身份认证</h2>
+                                        <div id="searchbox" class="orderinfo">
+                                            <div class="alist">
+                                                <div>
+                                                    <table width="100%" cellpadding="3" cellspacing="1" border="0" class="authenticateTable">
+                                                        <tr>
+                                                            <td align="right">会员卡号：</td>
+                                                            <td class='tdstyle'><input type="text" value="" id="memberNo" name="memberNo"  size="25" onblur="changeMember()" /></td>
+                                                            <td align="right">中文全名：</td>
+                                                            <td class='tdstyle'><input type="text" value="" id="fullName"  size="25" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="right" width="20%">证件类型：</td>
+                                                            <td class='tdstyle' width="20%">
+                                                                <select name="certType"  id="certType" style="width: 171px;">
+                                                                    <option value="">请选择</option>
+                                                                    <option value="NI">身份证</option>
+                                                                    <option value="PP">护照</option>
+                                                                    <option value="ID">其它</option>
+                                                                </select><span id="span_zeroCertType" style="color:Red"></td>
+                                                            <td align="right" width="10%">证件号码：</td>
+                                                            <td class='tdstyle' id="zeroText" width="50%">
+                                                                <input type="text" name="certNum"  id="certNum"   maxlength="25" size="25" value=""   onblur="checkCert(this.value)"  /><span id="span_CertNum" style="color:Red"></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="right">银行卡类型：</td>
+                                                            <td class='tdstyle' colspan="3"><input type="radio" id="bankTypeD" checked="true" name="bankType" value="D"/> 借记卡
+                                                                &nbsp;&nbsp;<input type="radio" id="bankTypeC"  name="bankType"  value="C"/> 信用卡
+                                                                <span style="color:red">信用卡认证将会自动绑定<a href="http://www.csair.com/cn/tourguide/faq/reserve/easy-card.shtml" target="_blank">一键支付</a>功能，借记卡认证不绑定</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bankCardTr">
+                                                            <td align="right">银行：</td>
+                                                            <td class='tdstyle'>
+                                                                <select id="bankcardType" style="width: 171px;">
+                                                                    <option   value="">请选择</option>
+                                                                    <option   value="CMBC">民生银行</option>
+                                                                    <option   value="ICBC">工商银行</option>
+                                                                    <option   value="CCB">建设银行</option>
+                                                                    <option   value="SDB">平安银行</option>
+                                                                    <option   value="ABC">农业银行</option>
+                                                                    <option   value="CEB">光大银行</option>
+                                                                    <option   value="CIB">兴业银行</option>
+                                                                    <option   value="POST">邮政储蓄</option>
+                                                                    <option   value="BOC">中国银行</option>
+                                                                    <option   value="ECITIC">中信银行</option>
+                                                                    <option   value="BCCB">北京银行</option>
+                                                                    <option   value="BOCO">交通银行</option>
+                                                                    <option   value="GDB">广发银行</option>
+                                                                    <option   value="HXB">华夏银行</option>
+                                                                </select><span id="span_bankcardType" style="color:Red"></td>
+                                                            <td align="right">银行卡号：</td>
+                                                            <td colspan="2" class='tdstyle' id="zeroText">
+                                                                <input type="text" name="bankcardNo" id="bankcardNo" maxlength="25" size="25" onblur="validatorCardNo(this.value)" /><span id="span_bankCardNo" style="color:Red"></span></td>
+                                                        </tr>
+                                                        <tr class="cCardTr">
+                                                            <td align="right">信用卡号：</td>
+                                                            <td class='tdstyle' colspan="3">
+                                                                <input type="text" name="cCardNo" id="cCardNo" maxlength="25" size="25" onblur="validatorCCardNo(this.value)" /><span id="span_cCardNo" style="color:Red"></span></td>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cCardTr">
+                                                            <td align="right">卡有效期：</td>
+                                                            <td class='tdstyle' colspan="3">
+                                                                <select id="effMonth" style="width: 84px">
+                                                                    <option value="">月</option>
+                                                                    <option value="01">01月</option>
+                                                                    <option value="02">02月</option>
+                                                                    <option value="03">03月</option>
+                                                                    <option value="04">04月</option>
+                                                                    <option value="05">05月</option>
+                                                                    <option value="06">06月</option>
+                                                                    <option value="07">07月</option>
+                                                                    <option value="08">08月</option>
+                                                                    <option value="09">09月</option>
+                                                                    <option value="10">10月</option>
+                                                                    <option value="11">11月</option>
+                                                                    <option value="12">12月</option>
+                                                                </select>
+                                                                <select id="effYear" style="width: 84px">
+                                                                    <option value="">年</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cCardTr">
+                                                            <td align="right">卡验证码：</td>
+                                                            <td class='tdstyle' colspan="3">
+                                                                <input type="text" name="saveCode" id="saveCode" maxlength="3" size="25" placeholder="卡背面末三位数字" /><span id="span_saveCode" style="color:Red"></span></td>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>绑定手机：</td>
+                                                            <td colspan="3" class='tdstyle'>
+                                                                <input type="text" id="bandPhonehidden" name="bandPuid" size="20" value=""   onblur="changeBandPuid()" />
+                                                                <input type="button" id="sendValidateCode" style="height:20px;color:008dd3;background:#87CEFA;" onclick="sendCode();" value="获取验证码"/>
+                                                                <span style="color:red;">绑定手机必须与银行预留手机一致,该手机将会更新到联系手机</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td><span >短信验证码：</span></td>
+                                                            <td colspan="3" class='tdstyle'><input name="validateCode" id="validateCode" placeholder="切换银行卡需重新获取验证码" type="text" size="25"/>
+                                                                <span style="color:red">验证码10分钟内有效 <span id="valicodeRemind" style="display:none;">N秒后可重新获取</span></span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="butLine1" style="margin-left:150px;align: center; width:500px;"  >
+                                                        <a style="margin-left:10%;align: center; width:65px;" class="btn_sn" id="savebutton" href="javascript:void(0);">
+                                                            <span class="bn"  align="center">申 请</span></a><span id="notice" style="color:red;display:none;">您的个人信息与明珠卡号账户信息不一致,请核实后重新点击申请</span>
+                                                        &nbsp;&nbsp;<img id="loadimg" src='/skypearl/cn/images/loading.gif' width="20" height="20" style="display:none"/></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                            </div></div>
+                    </div></div>
+            </div>
+        </div>
+</body>
+</html>
+
